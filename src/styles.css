@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-accent: #d97706; /* Amber 600 */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #ffffff;
+}
+
+/* Pour les titres élégants */
+h1,
+h2,
+h3,
+h4,
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
+
+/* Navigation transparente */
+.glass-nav {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+}
+
+/* Boutons dorés */
+.btn-accent {
+  @apply bg-amber-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-amber-500 transition-all duration-300 shadow-lg shadow-amber-600/20 text-sm uppercase tracking-wider;
+}
